@@ -107,7 +107,7 @@
       <bpmn:outgoing>SequenceFlow_1qz4qe6</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="SequenceFlow_187f27f" name="Yes" sourceRef="ExclusiveGateway_0iani1v" targetRef="Task_0cdxy3o">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{questionFour == ('b1'|| 'b2')}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{questionFour == ('b2') || questionFour == 'b1'} </bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="SequenceFlow_1qz4qe6" sourceRef="ExclusiveGateway_0iani1v" targetRef="EndEvent_15e7g4u" />
     <bpmn:subProcess id="SubProcess_1uk0dl3" triggeredByEvent="true">

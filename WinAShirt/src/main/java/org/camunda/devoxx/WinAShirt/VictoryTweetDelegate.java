@@ -18,7 +18,7 @@ public class VictoryTweetDelegate implements JavaDelegate {
 		  
 	    String name = (String)execution.getVariable("name");
 
-	    String content = name + " WON THE #CAMUNDA QUIZ!!!! at #WJAX";
+	    String content = name + " WON THE @Camunda QUIZ!!!! at #WJAX";
 	    LOGGER.info("Publishing tweet: " + content);
 	    AccessToken accessToken = new AccessToken("220324559-jet1dkzhSOeDWdaclI48z5txJRFLCnLOK45qStvo", "B28Ze8VDucBdiE38aVQqTxOyPc7eHunxBVv7XgGim4say");
 	    Twitter twitter = new TwitterFactory().getInstance();
